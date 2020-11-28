@@ -13,30 +13,64 @@ body {
 
 button {
 	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+	border-bottom-left-radius:12px; /* all buttons raduis of 12px*/
+	
 }
 
 /*  Navigation */
 .navbar-brand > img {
 	max-height: 40px;
 	width: auto;
+	
 }
 
 .navbar-light .navbar-toggler {
 	border: 0;
 	right:  0;
+	
+	
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: #292b2c;
+	
+	color: #2d2e2e;
 	font-weight: 600;
 	text-transform: uppercase;
+	
+	
 
 	/*  Challenge: can you make the navigation links orange on hover? */
-}
 
+}
+.nav-item-active{
+	margin: 0px, 50px;
+	border: 5px,solid;
+	padding:5px;
+
+}
+.navbar-light .navbar-nav .nav-link:hover{
+color: #ce5f31;
+
+
+}
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
-
+.donate:hover{
+	border:  red;
+	background-color: blue;
+	color:rgb(255, 47, 47);
+	box-shadow: rgb(8, 8, 8);
+	border-radius: 8px; /*border-radius of 8px*/
+	transition:3s; /* dely of 3 seconds*/
+	
+} /* volunteer button*/
+.volunteer:focus{
+	background-color: #470bec;
+	color:rgb(241, 255, 47);
+	box-shadow: rgb(8, 8, 8); /*box-shadow of black*/
+	border-radius: 8px; /*border-radius of 8px*/
+	
+}
 
 /* Alert */
 .alert {
@@ -93,6 +127,11 @@ button {
 /* Article */
 .article {
 	margin-bottom: 2em;
+	background-color: #b8bebe;
+	padding-top: 15px;
+	padding-left: 10px;
+	border-radius: 5px;
+	
 }
 
 .article__title {
@@ -109,27 +148,36 @@ button {
 .article__read-more a:hover,
 .article__read-more a:focus {
 	text-decoration: none;
+
 }
 
 .article__read-more .fa {
 	margin-right: 0.5em;
 	color: #ce5f31;
+	background-color: #b58cd6;
+	border-radius: 5px;
 }
 
 .article__read-more:last-child {
 	margin-bottom: 0;
+	background-color: #8cd6cc;
+	border-radius: 5px;
 }
 
 /* Footer */
 .footer {
 	margin-top: 4em;
+	
 }
 
 .footer p {
+	background-color: #918cd6;
+	border-color: black;
 	border-top: 1px solid #dccdc6;
 	padding-top: 2em;
 	padding-bottom: 2em;
-}
+	border-radius: 5px;
+
 
 /* Media queries */
 

@@ -13,7 +13,7 @@ body {
 
 button {
 	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
-	border-bottom-left-radius:12px; /* all buttons raduis of 12px*/
+	
 	
 }
 
@@ -40,40 +40,48 @@ button {
 	
 
 	/*  Challenge: can you make the navigation links orange on hover? */
+}
+.navbar-light .navbar-nav .nav-link:hover{ /*Challenge: completed*/
+color: #ce5f31;
+transition: 1s;
+
 
 }
+
+
 .nav-item-active{
 	margin: 0px, 50px;
 	border: 5px,solid;
 	padding:5px;
 
 }
-.navbar-light .navbar-nav .nav-link:hover{
-color: #ce5f31;
-
-
-}
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
-.donate:hover{
-	border:  red;
-	background-color: blue;
-	color:rgb(255, 47, 47);
-	box-shadow: rgb(8, 8, 8);
-	border-radius: 8px; /*border-radius of 8px*/
-	transition:3s; /* dely of 3 seconds*/
+
+/* Donate button*/
+.donate{
+	color: #050505;
 	
-} /* volunteer button*/
-.volunteer:focus{
-	background-color: #470bec;
-	color:rgb(241, 255, 47);
-	box-shadow: rgb(8, 8, 8); /*box-shadow of black*/
-	border-radius: 8px; /*border-radius of 8px*/
-	
+	background-color: #ce5f31;
+	transition: 1s;
+	padding:3px;
+	border-radius: 5%;
 }
+
+/* volunteer button*/
+
+.volunteer:hover{
+color: black;
+background-color: #ce5f31;
+padding: 3px;
+border-radius: 5px;
+		
+}
+
 
 /* Alert */
 .alert {
+	
 	position: relative;
 	margin-top: 2em;
 	margin-bottom: 3em;
@@ -99,6 +107,8 @@ color: #ce5f31;
 
 /* Jumbotron */
 .jumbotron {
+	
+
 	border-radius: 0;
 }
 
@@ -127,7 +137,7 @@ color: #ce5f31;
 /* Article */
 .article {
 	margin-bottom: 2em;
-	background-color: #b8bebe;
+	background-color: #feffff;
 	padding-top: 15px;
 	padding-left: 10px;
 	border-radius: 5px;
@@ -160,7 +170,7 @@ color: #ce5f31;
 
 .article__read-more:last-child {
 	margin-bottom: 0;
-	background-color: #8cd6cc;
+	background-color: #eff0f0;
 	border-radius: 5px;
 }
 
@@ -171,14 +181,14 @@ color: #ce5f31;
 }
 
 .footer p {
-	background-color: #918cd6;
+	
 	border-color: black;
 	border-top: 1px solid #dccdc6;
 	padding-top: 2em;
 	padding-bottom: 2em;
 	border-radius: 5px;
 
-
+}
 /* Media queries */
 
 @media screen and (min-width: 992px) {

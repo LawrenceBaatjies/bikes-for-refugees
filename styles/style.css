@@ -115,6 +115,7 @@ border-radius: 5px;
 /* Headings */
 .heading-underline {
 	position: relative;
+	
 	margin-bottom: 2em;
 	padding-bottom: 0.5em;
 	border-bottom: 1px solid #dccdc6;
